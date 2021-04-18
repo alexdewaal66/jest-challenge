@@ -1,6 +1,6 @@
 const { challenge } = require('../index');
 
-test(`challenge(x) will extract every 2nd char out of 3 from 'x.garbled' and string them together.`, () => {
+test(`challenge(x) will extract every 2nd char out of 3 from 'x.garbled' and concatenate them.`, () => {
     // Arrange
     const testObject = {
         irrelevant: 12345,
@@ -10,6 +10,7 @@ test(`challenge(x) will extract every 2nd char out of 3 from 'x.garbled' and str
     // Act
     const result = challenge(testObject);
     // Assert
-    expect(result).toEqual('Werk in uitvoering.');
+    expect(typeof result).toBe('string');
+    expect(result).toEqual('Opdracht volbracht!');
 });
 
