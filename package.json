@@ -1,0 +1,15 @@
+{
+  "name": "challenge-7.6",
+  "version": "1.0.0",
+  "description": "challenge voor medestudent mbv Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest",
+    "test:watch": "npx jest --watch"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
